@@ -25,19 +25,19 @@ function LodgmentCarrousel({ images }) {
   };
 
   
-   // Condition for making arrows visible or not depending of nb of images
-   const renderArrows = images.length > 1 ? (
+   // Condition for making arrows and numbering visible or not depending of nb of images
+   const renderArrowsNnumber = images.length > 1 ? (
     <div>
       <img className="arrow arrow_left" src={img_arrow_left} alt="chevron direction left" onClick={goToPrevious} />
       <img className="arrow arrow_right" src={img_arrow_right} alt="chevron direction right" onClick={goToNext} />
+      <p className="lodgment_picture_rank">{currentImageIndex + 1}/{images.length}</p>
     </div>
   ) : null;
 
   return (
     <div className="lodgment_carrousel">
-      {renderArrows}
+      {renderArrowsNnumber}
       <img className="lodgment_photo" src={images[currentImageIndex]} alt="Lodgment" />
-      <p className="lodgment_picture_rank">{currentImageIndex + 1}/{images.length}</p>
     </div>
   );
 };

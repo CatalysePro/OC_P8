@@ -1,12 +1,12 @@
 
 .gallery_block {
 
-    /* max-width: 1240px; */
+    
 
     width: 1240px;
     height: 829px;
     
-    /* flex-grow: 1; */
+   
 
     display: flex;
     justify-content: space-between;
@@ -16,17 +16,12 @@
     margin-top: 40px;
     margin-bottom: 40px;
 
-    /* padding-left: 20px; */
-
-    /* padding-top: 10px;
-    padding-bottom: 10px;
-    padding-left: 80px; */
-    /* padding-right: -40px !important; */
+   
 
     border: 1px solid transparent;
     border-radius: 25px;
 
-    /* background-color: lightsalmon; */
+    
     background-color: #F6F6F6;
 
     
@@ -65,7 +60,6 @@
 
 @media only screen and (max-width: 767px) {
 
-    
   
     .gallery_block {
       
@@ -82,10 +76,6 @@
     .cards_container {
   
         width: 335px;
-        
-
-        /* overflow: hidden; */
-
        
     }
     
@@ -104,10 +94,6 @@
       
         width: 90%;
         height: 829px;
-        /* display: flex;
-        flex-direction: column; 
-        justify-content: center;  */
-
         padding: 10px 0px 10px 10px;
       
     }
@@ -116,11 +102,6 @@
   
         width: 100%;
 
-        
-
-        /* overflow: hidden; */
-
-       
     }
     
   }

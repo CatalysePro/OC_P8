@@ -1,5 +1,5 @@
 import React from 'react';
-import { NavLink } from 'react-router-dom'; 
+import { NavLink } from 'react-router-dom';
 import logo from '../pictures/logos/logo_header.png'; 
 import '../style/Header.css';
 
@@ -7,7 +7,7 @@ function Header() {
   return (
     <header className="header">
       <div className="logo_header">
-      <NavLink exact="true" to="/"> 
+        <NavLink exact="true" to="/"> 
           <img src={logo} alt="Logo Kasa Immobilier" />
         </NavLink>
       </div>

@@ -12,8 +12,7 @@ import ErrorPage from '../pages/ErrorPage';
 
 function FullDescriptionPage() {
   const { idLodg } = useParams(); // get the id from the url
-  const allInfo = data.filter(oneLodg => oneLodg.id === idLodg); 
-  console.log(allInfo); // check
+  
 
   // Filter data based on idLodg
   const lodgment = data.find(oneLodg => oneLodg.id === idLodg);
@@ -28,7 +27,7 @@ function FullDescriptionPage() {
     
       <div className="full_description_page">
         <Header />
-        <LodgmentCarrousel images={allInfo[0].pictures} /> 
+        <LodgmentCarrousel images={lodgment.pictures} /> 
         <LodgmentInfo1
           title={lodgment.title}
           location={lodgment.location}
@@ -38,8 +37,8 @@ function FullDescriptionPage() {
           rating={lodgment.rating}
         />
         <LodgmentInfo2
-          explanation={allInfo[0].description}
-          stuff={allInfo[0].equipments}
+          explanation={lodgment.description}
+          stuff={lodgment.equipments}
         />
         <Footer />
       </div>

@@ -419,6 +419,19 @@
         
         
     }
+
+    .lodgment_Rating_block {
+
+        width: 100%;
+        
+        margin-top: 15px;
+        
+        text-align: left;
+
+        /* background-color: grey; */
+    }
+    
+    
     
     
   }
