@@ -1,0 +1,33 @@
+
+
+/*?  on click arrow effects */
+
+
+.arrow_up {
+  
+  transition: transform 0.5s ease-in-out; 
+}
+
+.arrow_up.rotate180 {
+  transform: rotate(180deg);
+}
+
+.hidden_paragraph {
+  
+  opacity: 0;
+  transform: translateY(-20px);
+  transition: opacity 0.5s ease-in-out, transform 0.5s ease-in-out; 
+  transition: height 0.5s ease-in-out;
+  height: 10px;
+  overflow: hidden;
+  
+}
+
+.hidden_paragraph.show_paragraph {
+  opacity: 1; 
+  transform: translateY(0);
+  
+  height: auto;
+  overflow: hidden;
+  
+}

@@ -1,0 +1,95 @@
+
+.banner_homepage {
+
+  width: 1240px;
+  height: 223px;
+  position: relative;
+
+  margin: 10px auto 10px auto;
+
+  border: 1px solid transparent;
+  border-radius: 25px;
+
+  /* background-color: black; */
+  box-shadow: 0px 4px 4px 0px #00000040;
+
+}
+
+.banner_homepage img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border: 0.1px solid #F6F6F6;
+  border-radius: 25px;
+
+  background-color: black;
+  filter: brightness(65%);
+}
+
+.banner_homepage h1 {
+  position: absolute;
+  width: 733px;
+  top: 50%;
+  left: 50%;
+  flex-wrap: nowrap;
+  transform: translate(-50%, -50%);
+  color: white;
+  text-align: center;
+  margin: 0;
+  padding: 0 20px; 
+
+  font-size: 48px;
+}
+
+
+/** START MEDIA QUERIES PHONE */
+
+@media only screen and (max-width: 767px) {
+
+  .banner_homepage {
+
+    /* max-width: 335px; */
+    width: 335px;
+    height: 111px;
+    margin-left: auto;
+    margin-right: auto;
+    
+  }
+
+  .banner_homepage h1 {
+    
+    width: 225px; 
+    height:auto;
+    top: 50%;
+    left: 40%;
+    text-align: left;
+
+    font-size: 24px;
+  }
+  
+  
+  
+}
+
+/** END MEDIA QUERIES PHONE */
+
+/*? START MEDIA QUERIES TABLET */
+
+@media only screen and (min-width: 768px) and (max-width: 1440px) {
+
+  .banner_homepage {
+
+    width: 90%;
+    height: 200px;
+
+  }
+
+  .banner_homepage h1 {
+
+    font-size: 36px;
+
+  }
+  
+}
+
+/*? END MEDIA QUERIES TABLET */

@@ -1,0 +1,273 @@
+
+.lodgment_info2 {
+
+  width: 1240px ;
+  /* max-height: 272px; */
+  height: auto;
+  
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+
+  align-content: center ;
+  
+  margin-left: auto;
+  margin-right: auto;
+
+  padding-top: 20px;
+  padding-bottom: 20px;
+
+  /* border: 1px solid red;
+
+  background-color: lightgreen; */
+
+}
+
+
+.description_BLOCK, .equipments_BLOCK {
+
+  
+  width: 45%;
+  /* max-height: 150px; */
+  height: auto;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  
+  
+
+}
+
+.top_line { /* className from ShowNhide*/
+
+
+  width: auto;
+  /* min-height: 52px; */
+  height: auto;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+
+  align-items: center;
+
+  border: 1px solid transparent;
+  border-radius: 10px;
+
+  background-color: #FF6060;
+
+  transition: none;
+    
+}
+
+
+.top_line h3 { /* className from ShowNhide*/
+
+  text-align: right;
+  font-family: "Montserrat", sans-serif;
+  font-size: 18px;
+  font-weight: 700;
+  color: #FFFFFF;
+    
+}
+
+.arrow_up { /* className from ShowNhide*/
+
+  width: 32px;
+  height: 32px;
+  
+  margin-right: 10px;
+
+  cursor: pointer;
+}
+
+
+.explanation  { /* className from ShowNhide*/
+
+  width: auto;
+  
+  max-height: 150px !important; /* "!important" is necessary*/
+  height: auto;
+
+  
+  font-family: "Montserrat", sans-serif;
+  font-size: 18px;
+  font-weight: 400;
+  color: #000000;
+
+  padding-left: 5px;
+  padding-right: 5px;
+
+  text-justify: auto;
+  hyphens: auto;
+
+}
+
+
+
+.explanation ul {
+
+  text-align: left;
+  font-family: "Montserrat", sans-serif;
+  font-size: 18px;
+  font-weight: 400;
+  color: #000000;
+  /* color: blue; */
+  list-style-type: none;
+  padding-left: 0px;
+  margin-top: 0px;
+}
+
+/*?  on click arrow effects */
+
+/* NB  ShowNhide Component do not manage css but its classNames */
+
+
+.arrow_up {
+  
+  transition: transform 0.7s ease-in-out; 
+}
+
+.arrow_up.rotate180 {
+  transform: rotate(180deg);
+}
+
+.hidden_paragraph {
+  
+  opacity: 0;
+  transform: translateY(-20px);
+  transition: opacity 0.7s ease-in-out, transform 0.7s ease-in-out; 
+  transition: height 0.7s ease-in-out;
+  height: 10px;
+  overflow: hidden;
+  
+}
+
+.hidden_paragraph.show_paragraph {
+  opacity: 1; 
+  transform: translateY(0);
+  
+  height: 150px !important;
+  overflow: hidden;
+  
+}
+
+/** START MEDIA QUERIES PHONE */
+
+@media only screen and (max-width: 767px) {
+
+  .lodgment_info2 {
+
+    width: 335px ;
+
+    flex-direction: column;
+
+  }
+
+  .description_BLOCK, .equipments_BLOCK {
+  
+    width: 100%;
+
+  }
+
+  
+
+  .top_line h3 {
+    
+    font-size: 13px;
+    
+  
+  }
+
+  .arrow_up {
+
+    width: 22px;
+    height: 22px;
+    
+    /* margin-right: 10px;
+  
+    cursor: pointer; */
+  }
+  
+
+  /* .explanation {
+
+    height: 400px !important;
+  } */
+
+  .explanation ul {
+
+    padding-left: 10px !important;
+  }
+  
+  .hidden_paragraph.show_paragraph {
+    opacity: 1; 
+    transform: translateY(0);
+    
+    height: 300px !important;
+    overflow: hidden;
+    
+  }
+  
+}
+
+/** END MEDIA QUERIES PHONE */
+
+/*? START MEDIA QUERIES TABLET */
+
+@media only screen and (min-width: 768px) and (max-width: 1440px) {
+
+  .lodgment_info2 {
+
+    width: 90% ;
+
+    flex-direction: column;
+
+    /* background-color: gray; */
+
+  }
+
+  .description_BLOCK, .equipments_BLOCK {
+  
+    width: 100%;
+    margin-top: 10px;
+    font-size: 13px;
+    
+
+  }
+
+  .equipments_BLOCK {
+
+    padding-bottom: -10px;
+  }
+  
+  /* .explanation {
+
+    height: 100%;
+  } */
+
+  .explanation ul {
+
+    height: 100% !important;
+    
+    font-size: 18px;
+    
+    /* background-color: gray; */
+    
+  }
+
+  .hidden_paragraph.show_paragraph {
+    opacity: 1; 
+    transform: translateY(0);
+    
+    height: 300px !important;
+    overflow: hidden;
+    
+  }
+
+  
+
+  
+}
+
+/*? END MEDIA QUERIES TABLET */

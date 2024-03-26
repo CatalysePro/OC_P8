@@ -1,0 +1,128 @@
+
+.gallery_block {
+
+    /* max-width: 1240px; */
+
+    width: 1240px;
+    height: 829px;
+    
+    /* flex-grow: 1; */
+
+    display: flex;
+    justify-content: space-between;
+
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 40px;
+    margin-bottom: 40px;
+
+    /* padding-left: 20px; */
+
+    /* padding-top: 10px;
+    padding-bottom: 10px;
+    padding-left: 80px; */
+    /* padding-right: -40px !important; */
+
+    border: 1px solid transparent;
+    border-radius: 25px;
+
+    /* background-color: lightsalmon; */
+    background-color: #F6F6F6;
+
+    
+    /* ===== scroll bar border-radius ======= */
+
+    /* invisible scroll-bar in the global div by occultation */
+    overflow: hidden;
+    position: relative;
+
+}
+
+.cards_container {
+
+    width: 100%;
+    height: 100%;
+
+    display: flex;              
+    flex-direction: row;         
+    justify-content: space-around;
+    flex-wrap: wrap;
+
+    /* scrollbar-color:#fff #fff; */
+	/* scrollbar-color:#B1663C #1D6154; */
+    
+    overflow-y: auto;
+    
+    /* invisible scroll-bar in the inside div by coloration */
+    scrollbar-color:#F6F6F6 #F6F6F6;
+    /* a lateral space to make the global div border radius appearing*/
+    padding-right: 15px;
+
+}
+
+
+/** START MEDIA QUERIES PHONE */
+
+@media only screen and (max-width: 767px) {
+
+    
+  
+    .gallery_block {
+      
+        width: 335px;
+        height: 829px;
+        display: flex;
+        flex-direction: column; 
+        justify-content: center; 
+
+        padding: 10px 5px 10px 5px;
+      
+    }
+  
+    .cards_container {
+  
+        width: 335px;
+        
+
+        /* overflow: hidden; */
+
+       
+    }
+    
+    
+    
+  }
+  
+  /** END MEDIA QUERIES PHONE */
+  
+  /*? START MEDIA QUERIES TABLET */
+  
+  @media only screen and (min-width: 768px) and (max-width: 1440px) {
+
+    
+    .gallery_block {
+      
+        width: 90%;
+        height: 829px;
+        /* display: flex;
+        flex-direction: column; 
+        justify-content: center;  */
+
+        padding: 10px 0px 10px 10px;
+      
+    }
+  
+    .cards_container {
+  
+        width: 100%;
+
+        
+
+        /* overflow: hidden; */
+
+       
+    }
+    
+  }
+  
+  /*? END MEDIA QUERIES TABLET */
