@@ -1,3 +1,6 @@
+body::-webkit-scrollbar { /* hide scroll-bar for chrome*/
+    display: none;
+}
 
 .home_page {
 
