@@ -1,12 +1,13 @@
+body::-webkit-scrollbar { /* hide scroll-bar for chrome*/
+    display: none;
+}
 
 .gallery_block {
 
-    
 
     width: 1240px;
     height: 829px;
     
-   
 
     display: flex;
     justify-content: space-between;
@@ -31,6 +32,7 @@
     overflow: hidden;
     position: relative;
 
+
 }
 
 .cards_container {
@@ -52,6 +54,8 @@
     scrollbar-color:#F6F6F6 #F6F6F6;
     /* a lateral space to make the global div border radius appearing*/
     padding-right: 15px;
+
+    scrollbar-width: none; /* invisible scroll-bar for fire-fox*/
 
 }
 

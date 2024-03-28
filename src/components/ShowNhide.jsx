@@ -11,13 +11,13 @@ function ShowNhide({ title, content }) {
 
   return (
     <div className="showNhide_BLOCK">
-      <div className="showNhide_title top_line">
+      <div className="showNhide_title top_line" onClick={toggleVisibility}>
         <h3>{title}</h3>
         <img
           className={`arrow_up ${isVisible ? 'rotate180' : ''}`}
           src={img_arrow_up}
           alt="chevron direction up"
-          onClick={toggleVisibility}
+          
         />
       </div>
       <div className={`hidden_paragraph explanation ${isVisible ? 'show_paragraph' : ''}`}>

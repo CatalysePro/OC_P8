@@ -28,10 +28,10 @@ const AboutPage = () => {
       <BannerAboutPage />
       <CompanyValues 
         values={[
-          { title: 'Fiabilité', content: allValues[0].reliability },
-          { title: 'Respect', content: allValues[0].respect },
+          { title: 'Fiabilité', content: allValues[0].reliability }, // possible with single or double quote
+          { title: "Respect", content: allValues[0].respect },
           { title: 'Service', content: allValues[0].service },
-          { title: 'Sécurité', content: allValues[0].security }
+          { title: "Sécurité", content: allValues[0].security }
         ]}
       />
       <Footer />

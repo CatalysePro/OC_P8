@@ -10,7 +10,6 @@ function CompanyValues({ values }) {
           
             <ShowNhide title={value.title} content={value.content} />
 
-          
         </div>
       ))}
     </div>
