@@ -10,10 +10,9 @@ function Gallery() {
       <div className="cards_container">
         {data.map(item => (
           <CardModule1
-            key={item.id}
-            title={item.title}
-            cover={item.cover}
-            id={item.id}
+          id={item.id}
+          title={item.title}
+          cover={item.cover}
           />
       ))}
       </div>
