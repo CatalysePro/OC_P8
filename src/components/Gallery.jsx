@@ -10,7 +10,8 @@ function Gallery() {
       <div className="cards_container">
         {data.map(item => (
           <CardModule1
-          id={item.id}
+          key={item.id} // for optimizing the iteration
+          id={item.id}  // for unique identification for targetting the element and other purposes
           title={item.title}
           cover={item.cover}
           />
