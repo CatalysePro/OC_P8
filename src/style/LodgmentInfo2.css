@@ -88,7 +88,7 @@
 
   width: auto;
   
-  max-height: 150px !important; /* "!important" is necessary*/
+  max-height: 160px !important; /* "!important" is necessary*/
   height: auto;
 
   
@@ -149,7 +149,7 @@
   opacity: 1; 
   transform: translateY(0);
   
-  height: 150px !important;
+  height: 160px !important;
   overflow: hidden;
   
 }

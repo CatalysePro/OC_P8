@@ -87,7 +87,7 @@
 
   width: auto;
   
-  max-height: 80px;
+  max-height: 80px !important;
   height: auto;
 
   font-family: "Montserrat", sans-serif;
